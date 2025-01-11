@@ -17,5 +17,3 @@ for(let [key, value] of map){
     console.log(`key: ${key} and value: ${value}`);
 }
 
-
-// use for counting the frequency of the number from the array
