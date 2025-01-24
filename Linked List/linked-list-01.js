@@ -39,6 +39,17 @@ class LinkedList {
         current = current.next;  // aur pointer to next node pe move karo
     }
   }
+
+  getDataOfAnySpecificNode(index){
+    let current = this.head;
+    let i = 0;
+    while(i < index){
+        current = current.next;
+        i++;
+    }
+
+    return current.data;
+  }
 }
 
 
@@ -52,4 +63,6 @@ list.add(30);
 list.add(40);
 list.add(50);
 
-list.printAll();
+list.printAll();  // output : 10 20 30 40 50
+
+console.log(list.getDataOfAnySpecificNode(3)); // output : 40
